@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://ben-santora.github.io/sitemap.xml
