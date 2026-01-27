@@ -5,33 +5,197 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ben Santora - Linux Systems Optimization - Bash Scripting</title>
-    <meta name="description"
-        content="Linux Systems">
+    <meta name="description" content="Linux Systems">
     <meta name="author" content="Ben Santora">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ben-santora.io/">
+    <meta property="og:url" content="https://ben-santora.github.io/">
     <meta property="og:title" content="Ben Santora - Linux OS">
-    <meta property="og:description"
-        content="Engineering technician focused on Linux environments">
-    <meta property="og:image" content="https://ben-santora.io/og-image.jpg">
+    <meta property="og:description" content="Engineering technician focused on Linux environments">
+    <meta property="og:image" content="https://ben-santora.github.io/og-image.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://ben-santora.io/">
+    <meta property="twitter:url" content="https://ben-santora.github.io/">
     <meta property="twitter:title" content="Ben Santora - Linux Systems">
-    <meta property="twitter:description"
-        content="Engineering technician - Linux Systems.">
+    <meta property="twitter:description" content="Engineering technician - Linux Systems.">
 
-    <link rel="canonical" href="https://ben-santora.io/">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="canonical" href="https://ben-santora.github.io/">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=JetBrains+Mono&display=swap"
         rel="stylesheet">
+
+    <!-- Inline CSS with the font variable applied correctly -->
+    <style>
+        :root {
+            --bg-color: #050505;       /* Very deep black */
+            --card-bg: #0f0f0f;        /* Slightly lighter for cards */
+            --text-primary: #e0e0e0;   /* Light grey for readability */
+            --text-secondary: #a0a0a0; /* Darker grey for metadata */
+            --accent-cyan: #00f3ff;    /* Electric Cyan */
+            --accent-cyan-dim: #00f3ff20; /* Dim Cyan for backgrounds */
+            --border-color: #333;
+            --font-main: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: var(--font-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Layout */
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+
+        header {
+            padding: 4rem 0 2rem;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 3rem;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.5rem;
+            color: #fff;
+        }
+
+        .subtitle {
+            color: var(--accent-cyan);
+            font-size: 1.1rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: #fff;
+            border-left: 3px solid var(--accent-cyan);
+            padding-left: 1rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        strong {
+            color: #fff;
+        }
+
+        /* Card / Article Style */
+        article {
+            animation: slideUp 0.8s ease-out 0.2s backwards;
+        }
+
+        .meta-info {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        blockquote {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 1.5rem;
+            border-radius: 4px;
+            margin: 2rem 0;
+            font-style: italic;
+            color: var(--text-secondary);
+            box-shadow: 0 4px 20px rgba(0, 243, 255, 0.05);
+        }
+
+        /* Footer */
+        footer {
+            margin-top: auto;
+            padding: 2rem 0;
+            text-align: center;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+
+        footer a:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+
+        /* Utilities */
+        .highlight {
+            color: var(--accent-cyan);
+        }
+
+        .code-snippet {
+            background: #1a1a1a;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--accent-cyan);
+            font-size: 0.9em;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { 
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -44,10 +208,10 @@
 
         <main>
             <article>
-                <p class="lead"><span class="highlight">Linux OS</span>Bash Scripting</p>
+                <p class="lead"><span class="highlight">Linux OS -</span>Bash Scripting</p>
 
                 <h2></h2>
-                <p>
+                <p></p>
 
                 <p class="meta-info"
                     style="margin-top: 2rem; border-top: 1px solid var(--border-color); padding-top: 1rem;">
@@ -57,8 +221,7 @@
         </main>
 
         <footer>
-            <p>&copy; 2026 Ben Santora. Hosted on <a href="https://github.com/ben-santora" target="_blank">GitHub</a>.
-            </p>
+            <p>&copy; 2026 Ben Santora. Hosted on <a href="https://github.com/ben-santora" target="_blank">GitHub</a>.</p>
         </footer>
     </div>
 </body>
