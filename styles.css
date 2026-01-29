@@ -184,3 +184,10 @@ ul li a {
   font-weight: 600;
   font-size: 1.2rem;
 }
+a {
+  color: var(--accent-cyan) !important;
+}
+
+a:visited {
+  color: #ffffff !important;
+}
