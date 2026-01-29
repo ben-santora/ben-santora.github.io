@@ -179,11 +179,11 @@ layout: none
         }
 
         @keyframes slideUp {
-            from { 
+            from {
                 opacity: 0;
                 transform: translateY(20px);
             }
-            to { 
+            to {
                 opacity: 1;
                 transform: translateY(0);
             }
@@ -194,7 +194,7 @@ layout: none
             h1 {
                 font-size: 2rem;
             }
-            
+
             .container {
                 width: 95%;
             }
@@ -211,17 +211,7 @@ layout: none
         </header>
 
         <main>
-            <article>
-                <p class="lead"><span class="highlight">Linux OS - System Optimization - Bash Scripting</span></p>
-
-                <h2></h2>
-                <p></p>
-
-                <p class="meta-info"
-                    style="margin-top: 2rem; border-top: 1px solid var(--border-color); padding-top: 1rem;">
-                    Ben Santora - January 2026
-                </p>
-            </article>
+            {{ content }} <!-- THIS IS WHERE YOUR PAGE CONTENT WILL GO -->
         </main>
 
         <footer>
