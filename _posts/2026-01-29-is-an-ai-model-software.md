@@ -3,6 +3,9 @@ layout: default
 title: "Is an AI Model Software? – A Low-Level Technical View"
 ---
 
+Is an AI Model Software? – A Low-Level Technical View
+by Ben Santora
+
 I've been posting AI-related articles on dev.to recently, documenting my experiences while testing small and large language models. I'm an engineering tech, not a professional software developer. Since dev.to is a platform for those in the software field, it got me thinking about whether AI is really software or not and whether I should be posting my AI articles here. 
 
 AI is so intertwined with software these days that it seems like an odd question. When we speak casually, we answer “yes”: large‑language models (LLMs) and small‑language models (SLMs) are built by engineers, shipped through software pipelines, and are run by programs. Yet at the level of a systems programmer, compiler writer, or hardware designer, the question is far from trivial. What exactly is an AI model, what does it contain, and does it satisfy the technical definition of software?
