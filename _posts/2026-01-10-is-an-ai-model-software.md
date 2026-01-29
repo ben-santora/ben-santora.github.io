@@ -4,7 +4,6 @@ title: "Is an AI Model Software? – A Low-Level Technical View"
 ---
 
 Is an AI Model Software? – A Low-Level Technical View
- - by Ben Santora
 
 I've been posting AI-related articles on dev.to recently, documenting my experiences while testing small and large language models. I'm an engineering tech, not a professional software developer. Since dev.to is a platform for those in the software field, it got me thinking about whether AI is really software or not and whether I should be posting my AI articles here. 
 
