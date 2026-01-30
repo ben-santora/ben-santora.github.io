@@ -1,13 +1,13 @@
 ---
 layout: default
-title: "LLMs - A Prompt to Force Hallucination"
+title: "LLMs - A Prompt to Encourage Hallucination"
 ---
 
 LLMs - A Prompt to Encourage Hallucination
 
 Continuing my testing of LLMs in order to identify their strengths and weaknesses, how they reason and other traits unique to each model.   
 
-My latest round of testing involved something different - trying to force them to hallucinate.
+My latest round of testing involved something different - trying to encourage them to hallucinate.
 
 Large Language Models (LLMs) are adept at synthesizing information, but they don’t just stop when they hit the edge of their training data — they will often improvise. When faced with topics that are obscure, poorly documented, or entirely fictional, they seem unable to say, "I don’t know." Instead, they hallucinate, weaving together plausible-sounding details, names, and even "facts" to fill the void. This isn’t a bug - it’s a feature. It's how these models are designed to work, and it reveals fascinating aspects about their creativity. They are trained to complete patterns, not to admit ignorance. When their training data runs out or doesn't contain the facts they need to pull from, they create.
 
