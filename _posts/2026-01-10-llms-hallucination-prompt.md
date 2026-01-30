@@ -3,7 +3,7 @@ layout: default
 title: "LLMs - A Prompt to Force Hallucination"
 ---
 
-LLMs - A Prompt to Force Hallucination
+LLMs - A Prompt to Encourage Hallucination
 
 Continuing my testing of LLMs in order to identify their strengths and weaknesses, how they reason and other traits unique to each model.   
 
